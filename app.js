@@ -2035,6 +2035,9 @@ function runHeroMoment() {
   elements.runDemo.querySelector("span:last-child").textContent = "Replay hero moment";
 }
 
+window.startHeroMoment = runHeroMoment;
+window.replayHeroMoment = runHeroMoment;
+
 function updateMap(elapsed) {
   if (!state.mapReady) return;
 
